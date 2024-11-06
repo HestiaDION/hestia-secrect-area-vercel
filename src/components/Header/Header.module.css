@@ -1,0 +1,102 @@
+:root{
+    --azul-mais-claro: #195198;
+    --outro-azul: #0D3D7B;
+    --branco: #FDFDFD;
+}
+
+.container {
+    background-color: var(--azul-mais-claro);
+    height: 107px;
+    display: flex;
+    justify-content: space-around; 
+    gap: 60%;
+    align-items: center; 
+    text-align: center; 
+    position: fixed;  
+    top: 0;           
+    left: 0;          
+    width: 100%;      
+    z-index: 1000; 
+}
+
+.btn_logout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--outro-azul);
+    border-radius: 5px;
+    border: none;
+    padding: 5px 15px;
+    gap: 5px;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 1024px) {
+    .container {
+        background-color: var(--azul-mais-claro);
+        height: 107px;
+        display: flex;
+        justify-content: space-around; 
+        gap: 40px;
+        align-items: center; 
+        text-align: center; 
+        position: fixed;  
+        top: 0;           
+        left: 0;          
+        width: 100vw;      
+        z-index: 1000; 
+    }
+
+    .btn_logout{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        font-size: 14px;
+        color: var(--outro-azul);
+        border-radius: 5px;
+        border: none;
+        padding: 5px;
+    }
+
+    .logo{
+        width: 150px;
+    }
+}
+
+/* Responsividade para celular */
+@media (max-width: 768px) {
+    .container {
+        background-color: var(--azul-mais-claro);
+        height: 107px;
+        display: flex;
+        justify-content: space-around; 
+        gap: 40px;
+        align-items: center; 
+        text-align: center; 
+        position: fixed;  
+        top: 0;           
+        left: 0;          
+        width: 100vw;      
+        z-index: 1000; 
+    }
+
+    .btn_logout{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        font-size: 14px;
+        color: var(--outro-azul);
+        border-radius: 5px;
+        border: none;
+        padding: 5px;
+        gap: 5px;
+    }
+
+    .logo{
+        width: 100px;
+    }
+}

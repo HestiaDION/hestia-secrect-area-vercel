@@ -1,0 +1,111 @@
+:root{
+  --vermelho-claro: #FF3263;
+  --branco: #FDFDFD;
+  --azul-claro: #195198;
+  --azul-preto: #00224D;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 129px;
+    gap: 5%;
+}
+  
+.introduction_text{
+    color: var(--azul-mais-escuro);
+    max-width: 500px;
+}
+  
+.introduction_text .title{
+    font-weight: 400; 
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+  
+.introduction_text .subtitle{
+    font-size: 32px;
+}
+
+.introduction_text button{
+    background-color: var(--branco);
+    margin-top: 54px;
+    width: 372px;
+    height: 73px;
+    border: solid 2px var(--vermelho-claro);
+    border-radius: 8px;
+    font-size: 24px;
+    color: var(--vermelho-claro);
+    cursor: pointer;
+
+    img{
+      margin-left: 15px; 
+    }
+}
+  
+.gif{
+    width: 573px;
+    height: 461px;
+    background-image: url("../../assets/gif_backgroud.svg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsividade para tablet */
+@media (max-width: 1024px) {
+  .main {
+    margin-top: 30%;
+  }
+  
+  .introduction_text .title {
+    font-size: 36px; 
+  }
+
+  .introduction_text .subtitle {
+    font-size: 24px; 
+  }
+
+  .introduction_text button {
+    font-size: 20px; 
+    height: 60px;
+  }
+
+  .gif {
+    display: none; 
+  }
+}
+
+/* Responsividade para celular */
+@media (max-width: 768px) {
+  .main {
+    margin-top: 30%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    margin-left: 15%;
+  }
+
+  .introduction_text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .introduction_text .title {
+    font-size: 28px; 
+  }
+
+  .introduction_text .subtitle {
+    font-size: 15px; 
+    text-align: left; /* Mantendo justificado à esquerda */
+    width: 80%; /* Largura do subtítulo */
+  }
+
+  .introduction_text button {
+    font-size: 18px; 
+    width: 300px; 
+  }
+}
